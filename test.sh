@@ -9,4 +9,6 @@ uname -a
 
 echo "Class B changes"
 
-testing new change
+free -h   
+ 
+echo "All changes  look good"
