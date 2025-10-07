@@ -82,3 +82,8 @@ Found existing alias for "docker build". You should use: "dbl"
 
 What's next:
     View a summary of image vulnerabilities and recommendations → docker scout quickview
+
+    ~/mi/HelloMIT/class2    main ?1  docker tag mit2 roshan4074/mit2                                ✔  45s   09:09:48 AM 
+    ~/mit/HelloMIT/class2    main ?1  docker images
+
+
