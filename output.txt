@@ -1,0 +1,47 @@
+    ~/mit/HelloMIT    main  vim Dockerfile                                                          ✔  6s   08:14:38 AM 
+    ~/mit/HelloMIT    main !1  clear                                                                ✔  6s   08:15:04 AM 
+    ~/mit/HelloMIT    main !1  docker build . -t mit                                                       ✔  08:15:19 AM 
+Found existing alias for "docker build". You should use: "dbl"
+[+] Building 3.6s (9/9) FINISHED                                                                                 docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                                             0.0s
+ => => transferring dockerfile: 271B                                                                                             0.0s
+ => [internal] load metadata for docker.io/library/nginx:alpine                                                                  1.8s
+ => [internal] load .dockerignore                                                                                                0.0s
+ => => transferring context: 2B                                                                                                  0.0s
+ => [1/4] FROM docker.io/library/nginx:alpine@sha256:42a516af16b852e33b7682d5ef8acbd5d13fe08fecadc7ed98605ba5e3b26ab8            0.0s
+ => [internal] load build context                                                                                                0.0s
+ => => transferring context: 9.86kB                                                                                              0.0s
+ => CACHED [2/4] WORKDIR /usr/share/nginx/html                                                                                   0.0s
+ => [3/4] RUN apk add --no-cache curl                                                                                            1.7s
+ => [4/4] COPY . .                                                                                                               0.0s
+ => exporting to image                                                                                                           0.0s
+ => => exporting layers                                                                                                          0.0s
+ => => writing image sha256:02a98d9a03143cf5747238340eeb84cd18e7edada4788d0941dabe723993237d                                     0.0s
+ => => naming to docker.io/library/mit                                                                                           0.0s
+
+What's next:
+    View a summary of image vulnerabilities and recommendations → docker scout quickview
+    ~/mit/HelloMIT    main !1  docker run -p 8000:80/tcp mit                                        ✔  4s   08:15:30 AM 
+2025/10/07 02:45:37 [notice] 1#1: using the "epoll" event method
+2025/10/07 02:45:37 [notice] 1#1: nginx/1.29.1
+2025/10/07 02:45:37 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0)
+2025/10/07 02:45:37 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2025/10/07 02:45:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/10/07 02:45:37 [notice] 1#1: start worker processes
+2025/10/07 02:45:37 [notice] 1#1: start worker process 7
+2025/10/07 02:45:37 [notice] 1#1: start worker process 8
+2025/10/07 02:45:37 [notice] 1#1: start worker process 9
+2025/10/07 02:45:37 [notice] 1#1: start worker process 10
+2025/10/07 02:45:37 [notice] 1#1: start worker process 11
+2025/10/07 02:45:37 [notice] 1#1: start worker process 12
+2025/10/07 02:45:37 [notice] 1#1: start worker process 13
+2025/10/07 02:45:37 [notice] 1#1: start worker process 14
+2025/10/07 02:45:37 [notice] 1#1: start worker process 15
+2025/10/07 02:45:37 [notice] 1#1: start worker process 16
+2025/10/07 02:45:37 [notice] 1#1: start worker process 17
+2025/10/07 02:45:37 [notice] 1#1: start worker process 18
+2025/10/07 02:45:37 [notice] 1#1: start worker process 19
+2025/10/07 02:45:37 [notice] 1#1: start worker process 20
+2025/10/07 02:45:37 [notice] 1#1: start worker process 21
+2025/10/07 02:45:37 [notice] 1#1: start worker process 22
+192.168.65.1 - - [07/Oct/2025:02:45:42 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:143.0) Gecko/20100101 Firefox/143.0" "-"
